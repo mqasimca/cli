@@ -1,0 +1,193 @@
+# Planning/internal docs
+*plan.md
+
+# Temporary refactoring/analysis documents
+REFACTORING_PROGRESS.md
+ENGINEERING_IMPROVEMENTS_SUMMARY.md
+COVERAGE_REPORT.md
+start.md
+*_PROGRESS.md
+*_SUMMARY.md
+*_REPORT.md
+
+# Temporary setup/installation docs (info should be in docs/development/)
+INSTALL_VHS.md
+VHS_SETUP_SUMMARY.md
+CODE_INDEX.md
+
+# Local development (not committed)
+/local/
+*design/
+
+# ===========================================
+# Claude Code - Local/Personal Files
+# ===========================================
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/*.local.*
+.claude/*/*.local.*
+
+# Session-specific progress tracking (personal, not shared)
+claude-progress.txt
+# Build artifacts
+dist/
+
+# Binaries
+bin/
+/nylas
+*.test
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test coverage
+*coverage*.out
+coverage.html
+*.coverprofile
+ci-full.txt
+ci-full-verification.txt
+*-verification.txt
+test-integration.txt
+
+# IDE
+.idea/
+.vscode/
+
+# Playwright MCP artifacts
+.playwright*
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Go
+vendor/
+
+# Node.js
+node_modules/
+internal/ui/static/js/package*.json
+internal/ui/static/js/*.test.js
+
+# ===========================================
+# SECURITY - Credential & Secret Protection
+# ===========================================
+
+# Environment files (may contain API keys)
+.env
+.env.*
+.env.local
+.env.development
+.env.test
+.env.production
+*.env
+
+# Credential files
+credentials.json
+credentials.yaml
+credentials.yml
+*credentials*
+*credential*
+!*credential*.go
+!*credentials*.go
+
+# API keys and tokens
+*.key
+*.pem
+*.p12
+*.pfx
+api_key*
+apikey*
+*api_key*
+*apikey*
+*token*
+!*_test.go
+!internal/cli/auth/token.go
+
+# Secret files
+secrets.json
+secrets.yaml
+secrets.yml
+*secrets*
+*secret*
+!internal/ports/secrets.go
+
+# OAuth tokens
+oauth_token*
+access_token*
+refresh_token*
+*.token
+
+# Config files that might contain secrets
+config.local.*
+config.private.*
+*.private.*
+local.yaml
+local.yml
+local.json
+
+# Nylas specific
+nylas_credentials*
+.nylas/
+nylas.env
+
+# Certificate files
+*.crt
+*.cer
+*.ca-bundle
+
+# SSH keys
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+*.ppk
+
+# GPG
+*.gpg
+*.asc
+secring.*
+
+# AWS
+.aws/
+aws_credentials
+
+# GCP
+service_account*.json
+gcp_credentials*
+
+# Azure
+.azure/
+
+# Backup files that might contain secrets
+*.bak
+*.backup
+*.old
+*.orig
+
+# Log files (may contain sensitive data)
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Test artifacts (may expose test credentials)
+test_output/
+test_results/
+test-results/
+playwright-report/
+
+# ===========================================
+# End Security Section
+# ===========================================
+.mcp.json
+*phase*.md
+ci-output.txt
+ci-results.txt
