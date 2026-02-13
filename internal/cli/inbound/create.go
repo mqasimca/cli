@@ -87,4 +87,3 @@ func runCreate(email string, jsonOutput bool) error {
 
 	return err
 }
-
